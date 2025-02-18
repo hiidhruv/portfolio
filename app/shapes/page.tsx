@@ -69,7 +69,7 @@ export default function ShapesPage() {
                 />
               </div>
               <div className="p-4">
-                <h2 className="text-xl mb-2">Hey, I'm {bot.name}</h2>
+                <h2 className="text-xl font-bold mb-2">{bot.name}</h2>
                 <p className="text-sm text-zinc-400 mb-4">{bot.description}</p>
                 <div className="flex gap-2">
                   <Button 

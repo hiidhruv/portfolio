@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { MessageSquare, Twitter, ExternalLink, Globe } from 'lucide-react'
+import { MessageSquare, Twitter, ExternalLink, Globe, Github } from 'lucide-react'
 
 export default function Page() {
   return (
@@ -40,6 +40,15 @@ export default function Page() {
               >
                 <a href="https://twitter.com/hiidhruv" target="_blank" rel="noopener noreferrer">
                   <Twitter className="h-3 w-3 sm:h-4 sm:w-4 mr-1.5 sm:mr-2" />
+                  @hiidhruv
+                </a>
+              </Button>
+              <Button 
+                className="h-8 px-3 sm:px-4 bg-white hover:bg-zinc-100 text-black rounded-none text-xs sm:text-sm"
+                asChild
+              >
+                <a href="https://github.com/hiidhruv" target="_blank" rel="noopener noreferrer">
+                  <Github className="h-3 w-3 sm:h-4 sm:w-4 mr-1.5 sm:mr-2" />
                   @hiidhruv
                 </a>
               </Button>
@@ -101,24 +110,6 @@ export default function Page() {
                   <a href="/shapes">
                     <ExternalLink className="h-2.5 w-2.5 sm:h-3 sm:w-3 mr-1.5 sm:mr-2" />
                     Meet them
-                  </a>
-                </Button>
-              </div>
-            </div>
-
-            <div className="border border-zinc-800 p-4 sm:p-6 relative min-h-[180px]">
-              <h3 className="text-sm sm:text-base mb-2">Inc Blog</h3>
-              <p className="text-xs sm:text-sm text-zinc-400 mb-6">
-                A blog site for services - where we share insights, updates, and stories about our journey.
-              </p>
-              <div className="absolute bottom-0 right-0 p-4 sm:p-6">
-                <Button 
-                  className="h-7 sm:h-8 px-3 sm:px-4 bg-black hover:bg-zinc-900 text-white border-t border-l border-zinc-800 rounded-none text-[10px] sm:text-xs after:content-[''] after:absolute after:top-0 after:right-0 after:w-2 after:h-2 after:border-t after:border-r after:border-zinc-800 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-2 before:h-2 before:border-b before:border-l before:border-zinc-800"
-                  asChild
-                >
-                  <a href="/blog">
-                    <ExternalLink className="h-2.5 w-2.5 sm:h-3 sm:w-3 mr-1.5 sm:mr-2" />
-                    Read Blog
                   </a>
                 </Button>
               </div>

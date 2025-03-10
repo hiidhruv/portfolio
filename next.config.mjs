@@ -24,11 +24,27 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    webpackBuildWorker: true,
-    parallelServerBuildTraces: true,
-    parallelServerCompiles: true,
-  }
+  async headers() {
+    return [
+      {
+        source: '/blog/:path*',
+        headers: [
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: '*',
+          },
+        ],
+      },
+    ]
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/blog/:path*',
+        destination: 'http://127.0.0.1:3000/:path*',
+      },
+    ]
+  },
 }
 
 mergeConfig(nextConfig, userConfig)
